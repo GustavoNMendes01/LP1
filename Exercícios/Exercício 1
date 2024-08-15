@@ -1,26 +1,36 @@
-import java.util.Scanner;
 
 public class Exercicios{
 
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
 		
 		int idade;
 		int meses;
 		int dias;
 		int soma;
 		
-		idade = sc.nextInt() * 365;
-		meses = sc.nextInt() * 30;
-		dias = sc.nextInt();
+		idade = 22 * 365;
+		meses = 2 * 30;
+		dias = 35;
 		
 		soma = idade + meses + dias;
 		
 		System.out.println("os dias dessa pessoa é:" + soma);
 		
-		sc.close();
+
 		
 		
 	}
 }
+		
+		
+
+		
+		
+	
+		
+		
+		
+	
+		
+
+
