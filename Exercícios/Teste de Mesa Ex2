@@ -1,0 +1,7 @@
+C1.eleitores = 500
+c2.brancos = 25
+c3.nulos = 25
+c4.porcentagem1 = eleitores / 100 brancos / brancos
+c5.porcentagem2 = eleitores / 100 * nulos / nulos
+c6.porcentagem3 = 100 - porcentagem1 - pocentagem 2 
+resultado = 5%, 5%, 90%.
