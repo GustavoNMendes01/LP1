@@ -1,0 +1,5 @@
+c1.idade = 22 * 365
+c2.meses = 2 * 30
+c3.dias = 35
+c4.soma = c1 + c2 + c3
+resultado = soma
