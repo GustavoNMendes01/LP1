@@ -1,0 +1,28 @@
+public class Exercicios{
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int eleitores;
+		int brancos;
+		int nulos;
+		int validos;
+		double porcentagem1, porcentagem2, porcentagem3;
+		
+		eleitores = 500;
+		brancos = 25; 
+		nulos = 25 ;
+		porcentagem1 = eleitores / 100 * brancos / brancos;
+		porcentagem2 = eleitores / 100 *nulos / nulos;
+		porcentagem3 = 100 - porcentagem1 - porcentagem2;
+		
+		System.out.println("A porcentagem de votos brancos é: " + porcentagem1 + "%");
+		System.out.println("A porcentagem de votos nulos é: " + porcentagem2 + "%");
+		System.out.println("A porcentagem de votos válidos é: " + porcentagem3 + "%");
+		
+		
+		
+		
+	}
+}
