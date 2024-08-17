@@ -1,28 +1,45 @@
-public class Exercicios{
+public class Exercicio2 {
+	int eleitores;
+	int brancos;
+	int nulos;
 
-	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
-		int eleitores;
-		int brancos;
-		int nulos;
-		int validos;
-		double porcentagem1, porcentagem2, porcentagem3;
-		
-		eleitores = 500;
-		brancos = 25; 
-		nulos = 25 ;
-		porcentagem1 = eleitores / 100 * brancos / brancos;
-		porcentagem2 = eleitores / 100 * nulos / nulos;
-		porcentagem3 = 100 - porcentagem1 - porcentagem2;
-		
-		System.out.println("A porcentagem de votos brancos é: " + porcentagem1 + "%");
-		System.out.println("A porcentagem de votos nulos é: " + porcentagem2 + "%");
-		System.out.println("A porcentagem de votos válidos é: " + porcentagem3 + "%");
-		
-		
-		
-		
-	}
+	 public Exercicio2 (int eleitores, int brancos, int nulos) {
+		 this.eleitores = eleitores;
+		 this.brancos = brancos;
+		 this.nulos = nulos;
+	 }
+	 public int numvalidos() {
+		 int validos = 100 - (eleitores/100*nulos/nulos)- (eleitores/100*brancos/brancos);
+		 return validos;
+	 }
+	 public int porcbrancos() {
+		 int brancoporc = eleitores/100*brancos/brancos;
+		return brancoporc;
+	 }
+	 public int porcnulos() {
+		 int nulosporc = eleitores/100*nulos/nulos;
+		 return nulosporc;
+	 }
+	 
+	 
+	 
+	 
+	 public static void main(String []args) {
+		 int eleitores = 500;
+		 int brancos = 25;
+		 int nulos = 25;
+		 Exercicio2 porcentagemvalidos=new Exercicio2(eleitores, brancos, nulos);
+		 int validos = porcentagemvalidos.numvalidos();
+		 int brancoporc = porcentagemvalidos.porcbrancos();
+		 int nulosporc = porcentagemvalidos.porcnulos();
+		 
+		 System.out.println("a porcentagem de Votos em branco é de: "+brancoporc+ "%");
+		 System.out.println("a porcentagem de Votos Nulo é de: "+nulosporc+ "%");
+		 System.out.println("a porcentagem de Votos Válidos é de: "+validos+ "%");
+		 
+	 }
+	 
+	
+	
+
 }
