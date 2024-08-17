@@ -1,35 +1,25 @@
-
-
-	public static void main(String[] args) {
-		
-		int idade;
-		int meses;
-		int dias;
-		int soma;
-		
-		idade = 22 * 365;
-		meses = 2 * 30;
-		dias = 35;
-		
-		soma = idade + meses + dias;
-		
-		System.out.println("os dias dessa pessoa é:" + soma);
-		
-
-		
-		
+public class Exercicio1 {
+	int idade;
+	int meses;
+	int dias;
+	
+	public Exercicio1(int idade, int meses, int dias) {
+	this.idade = idade;
+	this.meses = meses;
+	this.dias = dias;
 	}
-}
-		
-		
-
-		
-		
+	public int CalculoDeDias (){
+	 int TotalDias = ((idade*365) + (meses*30) + dias);
+	return TotalDias;	
+	}
 	
 		
-		
-		
 	
+	public static void main(String []args){
+		int idade = 22;
+		int meses = 2;
+		int dias = 35;
+		Exercicio1 dia = new Exercicio1(idade, meses, dias);
+		int totalDias = dia.CalculoDeDias();
 		
-
-
+		System.out.println("Você viveu aproximadamente " + totalDias + " dias.");
