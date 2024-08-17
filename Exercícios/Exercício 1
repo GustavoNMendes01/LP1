@@ -9,8 +9,8 @@ public class Exercicio1 {
 	this.dias = dias;
 	}
 	public int CalculoDeDias (){
-	 int TotalDias = ((idade*365) + (meses*30) + dias);
-	return TotalDias;	
+	 int totaldias = ((idade*365) + (meses*30) + dias);
+	return totaldias;	
 	}
 	
 		
@@ -20,6 +20,13 @@ public class Exercicio1 {
 		int meses = 2;
 		int dias = 35;
 		Exercicio1 dia = new Exercicio1(idade, meses, dias);
-		int totalDias = dia.CalculoDeDias();
+		int totaldias = dia.CalculoDeDias();
 		
-		System.out.println("Você viveu aproximadamente " + totalDias + " dias.");
+		System.out.println("Você viveu aproximadamente " + totaldias + " dias.");
+		
+		
+		
+		
+}
+}
+
