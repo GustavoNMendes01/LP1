@@ -1,9 +1,9 @@
 eleitores = 500
 brancos = 25
 nulos = 25
-validos= 100 - (eleitores/100*nulos/nulos)- (eleitores/100*brancos/brancos)
-branco = eleitores/100*brancos/brancos
-nulos = eleitores/100*nulos/nulos
+validos= 100 - (500/100*25/25)- (500/100*25/25)
+branco = 500/100*25/25
+nulos = 500/100*25/25
 
 
 resultado = 5% votos em branco
