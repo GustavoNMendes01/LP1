@@ -1,4 +1,5 @@
 Salario = 1500
 reajuste = 15
-novosalario = salario/100 * reajuste + salario
+novosalario = 1500/100 * 15 + 1500
+
 resultado = o novo sálario é de $1225
