@@ -1,0 +1,35 @@
+
+
+public class Exercicio4 {
+	int carrovalor;
+	int taxadistribuidor;
+	int taxaimposto;
+
+public Exercicio4(int carrovalor, int taxadistribuidor, int taxaimposto) {
+	this.carrovalor = carrovalor;
+	this.taxadistribuidor = taxadistribuidor;
+	this.taxaimposto = taxaimposto;
+}
+
+public int CalculoCarro () {
+	int valorcarro = carrovalor+(carrovalor/100*taxadistribuidor)+(carrovalor/100*taxaimposto);
+	return valorcarro;
+	
+}
+	
+
+	public static void main(String[] args) {
+		int carrovalor = 10000;
+		int taxadistribuidor = 28;
+		int taxaimposto = 45;
+		
+		Exercicio4 novovalorcarro = new Exercicio4(carrovalor, taxadistribuidor, taxaimposto);
+		int valorcarro = novovalorcarro.CalculoCarro();
+		
+		System.out.println("o valor final do carro é de: $"+valorcarro);
+		
+		
+
+	}
+
+}
