@@ -1,0 +1,35 @@
+package Exercicio;
+
+public class Exercicio3 {
+	int salario;
+	int reajuste;
+	
+public Exercicio3  (int salario, int reajuste) {
+	this.salario = salario;
+	this.reajuste = reajuste;
+	
+	
+}
+	
+
+public int CalculoSalario(){
+		int novosalario = salario/100 * reajuste + salario;
+		return novosalario;
+	}
+
+	public static void main(String[] args) {
+		int salario = 1500;
+		int reajuste = 15;
+		
+		Exercicio3 salarionovo =new Exercicio3(salario, reajuste);
+		int novosalario = salarionovo.CalculoSalario();
+		
+		System.out.println("O novo salário é de: "+novosalario);
+		
+		
+		
+	
+
+	}
+
+}
