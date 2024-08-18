@@ -1,0 +1,7 @@
+Valor = 9
+VerNumero = se valor for > 10
+            escrever "É MAIOR QUE 10"
+            se valor < 10
+            escrever "NÃO É MAIOR QUE 10"
+
+resultado = NÃO É MAIOR QUE 10.
