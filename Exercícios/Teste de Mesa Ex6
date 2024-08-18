@@ -1,0 +1,4 @@
+graus = 80
+conversao=(80 - 32) * 5/9;
+
+Resultado = a conversão para Celsius é de: 26°.
