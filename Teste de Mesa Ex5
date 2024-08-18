@@ -1,8 +1,0 @@
-	salario = 2000
-	vendas = 3
-	valorvenda = 30000
-	comissaovendas = 500
-	porcentagemvenda = 5%
-  SalarioFinal = (30000/100*5) + (500*3) + 2000
-
-  Resultado: o salario final do funcionario é de: $5000
