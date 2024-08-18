@@ -1,7 +1,0 @@
-idade = 22 
-meses = 2
-dias = 35
-TotalDias =(22*365) + (2*30) + 35
-
-
-resultado = 8125
