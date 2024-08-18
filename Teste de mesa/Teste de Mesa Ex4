@@ -1,0 +1,6 @@
+carrovalor = 10000
+taxadistribuidor = 28
+taxaimposto = 45
+valorcarro = 10000+(10000/100*28)+(10000/100*45);
+
+Resultado = Valor final do carro é de $17300
