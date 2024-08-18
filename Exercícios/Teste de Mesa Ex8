@@ -1,0 +1,7 @@
+Valor = -10
+VerificarValor = se valor < 0
+                escrever "negativo"
+                se valor > 0
+                escrever "Positivo"
+
+Resultado = Negativo
