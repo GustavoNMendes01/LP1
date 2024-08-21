@@ -1,0 +1,11 @@
+nota1 = 5
+nota2 = 5 
+media = 5 *5 /2
+
+VerificarNota = media(5)
+              se media(5) for  menor que 6
+              aluno reprovado.
+              se nao 
+              aluno aprovado.
+
+Resultado: Aluno Reprovado.
