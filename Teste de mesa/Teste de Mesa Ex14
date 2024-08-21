@@ -1,0 +1,11 @@
+horainicio = 24
+horafim = 15
+VerificarHora = se (horafim(15)) mior ou igual a horainicio(24)
+                retornar horainicio - horafim
+                se nao
+                retornar (24 - horainicio) + horafim;
+
+verificar2 = verificarHora
+
+resultado  = o jogo de xadrez durou: 15 horas
+
