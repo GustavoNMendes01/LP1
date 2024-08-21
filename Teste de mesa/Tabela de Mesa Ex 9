@@ -1,0 +1,8 @@
+maca = 11;
+VerificarQuantidade = Se 11 for menor que 12;
+                      11 = 11 * 1.30;
+                      se nao 
+                      11 = 11 * 1.00
+
+Resultado : o valor das maças ficou em: $14.3
+                      
