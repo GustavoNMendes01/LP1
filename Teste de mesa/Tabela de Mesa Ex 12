@@ -1,0 +1,10 @@
+valor1 = 17
+valor2 = 15
+VerificarValor = se (valor1(17) igual a valor2(15)
+                numeros iguais
+                se (valor1(17) maior que valor2(15)
+                primeiro numero é maior
+                se nao
+                segundo numero é maior.
+
+Resultado =  primeiro numero é maior.
