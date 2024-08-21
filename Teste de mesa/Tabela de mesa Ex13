@@ -1,0 +1,14 @@
+valor1= 8 
+valor2= 11    
+
+VerificarValor = se (valor1(8) igual a valor2(11)
+                numeros iguais
+                se (valor1(8) menor que valor2(11)
+                valor1 (8) 
+                valor2 (11)
+                se nao
+                valor2(11)
+                valor1(8)
+
+Resultado = valor1(8)
+            valor2(11)
