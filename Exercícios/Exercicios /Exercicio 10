@@ -1,0 +1,31 @@
+package Exercicio;
+
+public class Exercicio10 {
+	int nota1;
+	int nota2;
+	int media;
+	public Exercicio10(int nota1, int nota2) {
+		this.nota1 = nota1;
+		this.nota2 = nota2;
+		}
+	public void VerificarNota() {
+		media=(nota1 + nota2)/2;
+		if (media < 6) {
+			System.out.println("média final: "+media+"A luno reprovado");
+		}else {
+			System.out.print("média final: "+ media + " Aluno Aprovado");
+		}
+	
+	}
+		public static void main(String[] args) {
+		int nota1 = 5;
+		int nota2 = 5;
+		
+		Exercicio10 verificacao = new Exercicio10(nota1, nota2);
+		verificacao.VerificarNota();
+		
+	
+	
+	}
+
+}
