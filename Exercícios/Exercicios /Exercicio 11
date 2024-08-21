@@ -1,0 +1,26 @@
+package Exercicio;
+
+public class Exercicio11 {
+	int nascimento;
+	
+	public Exercicio11(int nascimento) {
+		this.nascimento = nascimento;
+	}
+	public void VerificarIdade() {
+		if (nascimento < 2006) {
+			System.out.println("Você ainda não pode votar");
+		}else{
+			System.out.println("Voce já pode votar");
+			
+		}
+	}
+	public static void main(String[] args) {
+		int nascimento = 2000;
+		
+		Exercicio11 Verificacao = new Exercicio11 (nascimento);
+		Verificacao.VerificarIdade();
+		
+		
+	}
+
+}
