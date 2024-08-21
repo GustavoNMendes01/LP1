@@ -1,0 +1,38 @@
+package Exercicio;
+
+public class Exercicio15 {
+	int horas;
+	int salarioporhora;
+	double salariofinal;
+	
+	public Exercicio15(int horas, int salarioporhora, double salariofinal){
+		this.horas = horas;
+		this.salarioporhora = salarioporhora;
+		this.salariofinal = salariofinal;
+	}
+	public void VerificarHoras() {
+		if(horas > 40) {
+			salariofinal = salarioporhora * horas *1.5;
+			System.out.println("Salario final: "+salariofinal);
+		}else {
+			salariofinal = salarioporhora * horas;
+			System.out.println("Salario final: "+salariofinal);
+			
+			
+		}
+		
+		
+		
+	}
+	public static void main(String[] args) {
+		int horas = 60;
+		int salarioporhora = 2;
+		double salariofinal = 0;
+		
+		Exercicio15 Verificacao = new Exercicio15(horas, salarioporhora, salariofinal);
+		Verificacao.VerificarHoras();
+		
+
+	}
+
+}
