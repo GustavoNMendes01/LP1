@@ -1,0 +1,6 @@
+Nascimento = 2000
+
+VerificarIdade = se (nascimento maior que 2006)
+                  imprimir = Voce ainda não pode votar.
+                  se nao
+                  Voce ja pode votar
