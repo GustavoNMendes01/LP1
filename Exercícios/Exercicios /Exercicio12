@@ -1,0 +1,33 @@
+package Exercicio;
+
+public class Exercicio12 {
+	int valor1;
+	int valor2;
+	public Exercicio12(int valor1, int valor2) {
+		this.valor1 = valor1;
+		this.valor2 = valor2;
+	}
+	public void VerificarValor() {
+		if (valor1 == valor2){
+			System.out.println("numeros iguais");
+		}else if(valor1 > valor2) {
+			System.out.println("primeiro numero é maior");
+			}else {
+		System.out.println("primeiro numero é maior");
+		
+	}
+}
+	
+	
+	
+	public static void main(String[] args) {
+		int valor1 = 17;
+		int valor2 = 15;
+		
+		Exercicio12 Verificacao = new Exercicio12(valor1, valor2);
+		Verificacao.VerificarValor();
+	
+
+	}
+
+}
