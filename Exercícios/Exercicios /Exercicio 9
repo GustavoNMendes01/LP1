@@ -1,0 +1,31 @@
+package Exercicio;
+
+public class Exercicio9 {
+	double maca;
+	double valormaca;
+	
+	
+	public Exercicio9(int maca) {
+		this.maca = maca;
+	}
+	public double VerificarQuantidade() {
+		if (maca < 12) {
+			return maca * 1.30;
+		
+		
+		
+		}else
+		return maca * 1;
+		
+		}
+	
+	public static void main(String[] args) {
+		int maca = 13;
+		Exercicio9 Verificacao = new Exercicio9(maca);
+		 Verificacao.VerificarQuantidade();
+		 double Verificacao2 = Verificacao.VerificarQuantidade();
+		 System.out.println("o valor das maças ficou em: $"+Verificacao2);
+	}
+
+}
+
