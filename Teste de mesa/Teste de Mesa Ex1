@@ -1,14 +1,7 @@
+idade = 22 
+meses = 2
+dias = 35
+TotalDias =(22*365) + (2*30) + 35
 
-| Passo                            | Variáveis           | Ação                                                    | Resultado                            |
-|----------------------------------|----------------------|---------------------------------------------------------|--------------------------------------|
-| **1. Inicialização das Variáveis**| `idade = 22`         | Definido a partir do `main`                              | `idade = 22`                         |
-|                                  | `meses = 2`          | Definido a partir do `main`                              | `meses = 2`                          |
-|                                  | `dias = 35`          | Definido a partir do `main`                              | `dias = 35`                          |
-| **2. Criação da Instância**       |                      | `Exercicio1 dia = new Exercicio1(idade, meses, dias);`  | `dia.idade = 22`, `dia.meses = 2`, `dia.dias = 35` |
-| **3. Cálculo dos Dias**           |                      | `int totaldias = dia.CalculoDeDias();`                   |                                      |
-|                                  | `idade = 22`         | `idade * 365`                                            | `22 * 365 = 8030`                    |
-|                                  | `meses = 2`          | `meses * 30`                                             | `2 * 30 = 60`                        |
-|                                  | `dias = 35`          | `8030 + 60 + 35`                                        | `8090 + 35 = 8125`                  |
-|                                  | `totaldias = 8125`   | Valor calculado                                          | `totaldias = 8125`                   |
-| **4. Impressão do Resultado**      |                      | `System.out.println("Você viveu " + totaldias + " dias.");` | `Você viveu 8125 dias.`              |
 
+resultado = 8125
