@@ -1,0 +1,14 @@
+mes1 = 15000
+mes2 = 23000
+mes3 = 17000
+gastototal = 55000.0
+mediadegastos = 0
+
+verificargastos  = gastototal = mes1(15000) + mes2(23000) + mes3(17000) 
+                  retornar = mediadegastos = gastototal(55000.0) / 3
+
+total = VerificarGastos
+
+
+Resultado = os gastos totais foram $55000.0
+           a media de gastos foi de  $18333.33
