@@ -7,7 +7,7 @@ public class Exercicio11 {
 		this.nascimento = nascimento;
 	}
 	public void VerificarIdade() {
-		if (nascimento < 2006) {
+		if (nascimento < 2008) {
 			System.out.println("Você ainda não pode votar");
 		}else{
 			System.out.println("Voce já pode votar");
