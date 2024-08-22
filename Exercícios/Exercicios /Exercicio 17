@@ -1,25 +1,36 @@
-package Exercicio;
-public class Exercicio17{
-    public static void main(String[] args) {
-  
-        double P1 = 5.0;
-        double E1 = 6.0 ;
-        double E2 = 8.0 ;
-        double AP = 9.0 ;
-        double X = 2.0;  
-        double SUB = 3.0; 
-        double MediaFinal;
+package org.example;
+import java.util.Scanner;
 
-       
-      MediaFinal = (P1*0.6+((E1+E2)/2) *0.4)*0.5+(MAX(((P1*0.6+
-    		  ((E1+E2)/2) *0.4)-5.9), 0)/((P1*0.6+ ((E1+E2)/2) *0.4)-5.9))*(AP*0.5)+X+(SUB*0.2);
+public class Atividade17{
+    Scanner ler = new Scanner(System.in);
+    double p1, e1, e2, api, x, sub;
 
-        
-        System.out.println("A média de LP1 é: " + MediaFinal);
+    public void calcular(){
+        double media = (p1*0.6+((e1+e2)/2)*0.4)*0.5+(Math.max(((p1*0.6+((e1+e2)/2)*0.4)-5.9),0)/((p1*0.6+((e1+e2)/2)*0.4)-5.9))*(api*0.5)+x+(sub*0.2);
+        System.out.println("MEDIA FINAL:" + media);
     }
 
-	private static double MAX(double d, int i) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public static void main(String[] args) {
+        Atividade17 nota = new Atividade17();
+
+        System.out.println("INSIRA A NOTA DA P1:");
+        nota.p1 = nota.ler.nextDouble();
+
+        System.out.println("INSIRA A NOTA DE E1:");
+        nota.e1 = nota.ler.nextDouble();
+
+        System.out.println("INSIRA A NOTA DE E2:");
+        nota.e2 = nota.ler.nextDouble();
+
+        System.out.println("INSIRA A NOTA DA API:");
+        nota.api = nota.ler.nextDouble();
+
+        System.out.println("INSIRA A NOTA DE EXERCICIOS:");
+        nota.x = nota.ler.nextDouble();
+
+        System.out.println("INSIRA A NOTA DA SUB:");
+        nota.sub = nota.ler.nextDouble();
+
+        nota.calcular();
+    }
 }
