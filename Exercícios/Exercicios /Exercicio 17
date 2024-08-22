@@ -1,0 +1,25 @@
+package Exercicio;
+public class Exercicio17{
+    public static void main(String[] args) {
+  
+        double P1 = 5.0;
+        double E1 = 6.0 ;
+        double E2 = 8.0 ;
+        double AP = 9.0 ;
+        double X = 2.0;  
+        double SUB = 3.0; 
+        double MediaFinal;
+
+       
+      MediaFinal = (P1*0.6+((E1+E2)/2) *0.4)*0.5+(MAX(((P1*0.6+
+    		  ((E1+E2)/2) *0.4)-5.9), 0)/((P1*0.6+ ((E1+E2)/2) *0.4)-5.9))*(AP*0.5)+X+(SUB*0.2);
+
+        
+        System.out.println("A média de LP1 é: " + MediaFinal);
+    }
+
+	private static double MAX(double d, int i) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
