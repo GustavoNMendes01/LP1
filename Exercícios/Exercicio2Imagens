@@ -1,0 +1,231 @@
+package exercicios;
+import java.util.Scanner;
+
+	public class TestaClasse {
+
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        boolean continuar = true;
+	        clearScreen(); 
+	        while (continuar) {
+	            System.out.println("=== MENU ===");
+	            System.out.println("1. Carro");
+	            System.out.println("2. Caneta");
+	            System.out.println("3. Cachorro");
+	            System.out.println("4. Bebida");
+	            System.out.println("5. Bicicleta");
+	            System.out.println("6. Livro");
+	            System.out.println("7. Telefone");
+	            System.out.println("8. Porta");
+	            System.out.println("9. Lava-Roupas");
+	            System.out.println("10. Cafeteira");
+	            System.out.println("11. sair");
+	            System.out.print("Escolha uma opção: ");
+	            int menu1 = scanner.nextInt();
+	            switch (menu1) {
+	            case 1:
+	            	
+	            	Carro carro1= new Carro();
+	            	 System.out.println("Escolha uma opção: ");
+	            	 System.out.println("1- Ligar Carro ");
+	            	 System.out.println("2- Acelerar");
+	            	 int menu2 = scanner.nextInt();
+	            	 switch(menu2) {
+	            	 case 1:
+	            		 Carro.ligar();
+	            		 break;
+	            	 case 2:
+	            		 Carro.Acelerar();
+	            		 break;
+	            	 case 3:
+                         continuar = false;
+                         break;
+	            	 default:
+                         System.out.println("Opção inválida.");
+                         break;
+	            	 
+	                    
+	            	 }
+	            	 break;	                                 		            	
+	            case 2:
+	            	Caneta caneta1= new Caneta();
+	            	System.out.println("Escolha uma opção: ");
+	            	 System.out.println("1- Abrir Tampa ");
+	            	 System.out.println("2- Escrever");
+	            	 int menu3 = scanner.nextInt();
+	            	 switch(menu3) {
+	            	 case 1:
+	            		 Caneta.AbrirTampa();
+	            		 break;
+	            	 case 2:
+	            		 Caneta.Escrever();
+	            		 break;
+	            	 default:
+                         System.out.println("Opção inválida.");
+                         break;
+	            	 }
+	            	 break;
+	            case 3:
+	            	cachorro cachorro1= new cachorro();
+	            	System.out.println("Escolha uma opção: ");
+	            	 System.out.println("1- Abrir Tampa ");
+	            	 System.out.println("2- Escrever");
+	            	 int menu4 = scanner.nextInt();
+	            	 switch(menu4) {
+	            	 case 1:
+	            		 Caneta.AbrirTampa();
+	            		 break;
+	            	 case 2:
+	            		 Caneta.Escrever();
+	            		 break;
+	            	 default:
+                         System.out.println("Opção inválida.");
+                         break;
+	            	 }
+	            	 break;
+	            	 
+           	 	case 4:
+           	 		bebida bebida1 = new bebida();
+           	 		System.out.println("Escolha uma opção: ");
+           	 		System.out.println("1-AbirGarrafa  ");
+           	 		System.out.println("2- ServirBebida ");
+           	 		int menu5 = scanner.nextInt();
+           	 		switch(menu5) {
+           	 		case 1:
+           	 			bebida.AbirGarrafa();
+           	 			break;
+           	 		case 2:
+           	 			bebida.ServirBebida();
+           	 			break;
+           	 	default:
+                    System.out.println("Opção inválida.");
+                    break;
+           	 		}
+           	 		break;
+           	 		
+           	 	case 5:
+           	 		bicicleta bicicleta1 = new bicicleta();
+           	 		System.out.println("Escolha uma opção: ");
+           	 		System.out.println("1-Pedalar  ");
+           	 		System.out.println("2- ServirBebida ");
+           	 		int menu6 = scanner.nextInt();
+           	 		switch(menu6) {
+           	 		case 1:
+           	 			bicicleta.Pedalar();
+           	 			break;
+           	 		case 2:
+           	 			bicicleta.Buzinar();
+           	 			break;
+           	 	default:
+                    System.out.println("Opção inválida.");
+                    break;
+           	 		}
+           	 		break;
+           	 		
+           	 	case 6:
+           	 		Livro livro1 = new Livro();
+           	 		System.out.println("Escolha uma opção: ");
+           	 		System.out.println("1-Abrir Livro  ");
+           	 		System.out.println("2- Ler Livro ");
+           	 		int menu7 = scanner.nextInt();
+       	 			switch(menu7) {
+       	 			case 1:
+       	 				Livro.AbrirLivro();
+       	 				break;
+       	 			case 2:
+       	 				Livro.LerLivro();
+       	 				break;
+       	 		default:
+                    System.out.println("Opção inválida.");
+                    break;
+       	 			}
+       	 			break;
+       	 			
+       	 		case 7:
+       	 			Telefone telefone1 = new Telefone();
+       	 			System.out.println("Escolha uma opção: ");
+       	 			System.out.println("1-Discar  ");
+       	 			System.out.println("2- Atender ");
+       	 			int menu8 = scanner.nextInt();
+       	 			switch(menu8) {
+       	 			case 1:
+       	 				Telefone.Discar();
+       	 				break;
+       	 			case 2:
+       	 				Telefone.Atender();
+       	 				break;
+       	 		default:
+                    System.out.println("Opção inválida.");
+                    break;
+       	 			}
+       	 			break;
+       	 			
+       	 		case 8:
+       	 			Porta porta1 = new Porta();
+       	 			System.out.println("Escolha uma opção: ");
+       	 			System.out.println("1-Abrir Porta");
+       	 			System.out.println("2- Atender ");
+       	 			int menu9 = scanner.nextInt();
+       	 			switch(menu9) {
+       	 			case 1:
+       	 				Porta.AbrirPorta();
+       	 				break;
+       	 			case 2:
+       	 				Porta.FecharPorta();
+       	 				break;
+       	 		default:
+                    System.out.println("Opção inválida.");
+                    break;
+       	 			}
+       	 			break;      	 		       	 			
+       	 		case 9:
+       	 			LavaRoupas lavaroupas1 = new LavaRoupas();
+       	 			System.out.println("Escolha uma opção: ");
+       	 			System.out.println("1-Lavar Roupa");
+       	 			System.out.println("2- Atender ");
+       	 			int menu10 = scanner.nextInt();
+       	 			switch(menu10) {
+       	 			case 1:
+       	 				LavaRoupas.LavarRoupa();
+       	 				break;
+   	 				case 2:
+   	 					LavaRoupas.DesligarMaquina();
+   	 					break;
+   	 			default:
+                    System.out.println("Opção inválida.");
+                    break;
+   	 			}
+       	 			break;
+       	 		
+       	 		case 10:
+       	 		Cafeteira cafeteira = new Cafeteira();
+       	 	System.out.println("Escolha uma opção: ");
+	 			System.out.println("1-Ligar Cafeteira");
+	 			System.out.println("2- Atender ");
+	 			int menu11 = scanner.nextInt();
+	 			switch(menu11) {
+	 			case 1:
+	 				Cafeteira.LigarCafeteira();
+	 				break;
+	 			case 2:
+	 				Cafeteira.PassarCafe();
+	 				break;
+	 			default:
+                    System.out.println("Opção inválida.");
+                    break;
+	 			}
+	 			break;
+       	 		case 11:
+       	 			continuar = false;
+       	 		System.out.println("Saindo...");
+       	 			break;
+       
+	            	 }
+	            }
+	        
+	        scanner.close();  }        
+		private static void clearScreen() {
+			// TODO Auto-generated method stub			
+		}
+		}
+
