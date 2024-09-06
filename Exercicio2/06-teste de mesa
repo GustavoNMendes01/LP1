@@ -1,0 +1,39 @@
+Teste de Mesa
+ 
+    Passo            Ação                                            f1 (5/2)	               f2 (3/7)     	  Resultado
+
+      1	             Criação de f1	                                 5 / 2	                    /                 /
+      2	             Criação de f2	                                 5 / 2	                  3 / 7	              /
+      3              Exibir f1	                                     5 / 2	                  3 / 7	          Fração 1: 5/2
+      4	             Exibir f2	                                     5 / 2	                  3 / 7     	    Fração 2: 3/7
+      5	             Soma f1.soma(f2)	                               5 / 2	                  3 / 7               /	
+      5.1          	 Novo numerador: 5 * 7 + 3 * 2 = 35 + 6 = 41	   5 / 2	                  3 / 7         	    41
+      5.2            Novo denominador: 2 * 7 = 14	                   5 / 2            	      3 / 7	              14
+      6	             Criar nova fração 41/14 e simplificar	         41 / 14	                  /            	Soma: 41/14
+      7	             Exibir resultado da soma	                       41 / 14	                  /             Soma: 41/14
+      8	             Subtração f1.subtracao(f2)                    	 5 / 2 	                  3 / 7	               /
+     8.1	           Novo numerador: 5 * 7 - 3 * 2 = 35 - 6 = 29	   5 / 2	                  3 / 7             	29
+     8.2	           Novo denominador: 2 * 7 = 14                    5 / 2	                  3 / 7	              14
+      9	             Criar nova fração 29/14 e simplificar	         29 / 14	                  /             Subtração: 29/14
+     10	             Exibir resultado da subtração	                 29 / 14		                /             Subtração: 29/14
+     11              Multiplicação f1.multiplicacao(f2)            	 5 / 2	                  3 / 7	               /
+     11.1            Novo numerador: 5 * 3 = 15	                     5 / 2	                  3 / 7	               15
+     11.2	           Novo denominador: 2 * 7 = 14	                   5 / 2	                  3 / 7	               14
+     12	             Criar nova fração 15/14 e simplificar	         15 / 14	                  /            Multiplicação: 15/14
+     13	             Exibir resultado da multiplicação	             15 / 14	                  /            Multiplicação: 15/14
+     14	             Divisão f1.divisao(f2)	                         5 / 2	                  3 / 7	                /
+     14.1	           Verificar se o numerador de f2 é zero	         5 / 2	                  3 / 7	          Não é zero
+     14.2            Novo numerador: 5 * 7 = 35	                     5 / 2	                  3 / 7	                35
+     14.3	           Novo denominador: 2 * 3 = 6	                   5 / 2	                  3 / 7	                6
+     15	             Criar nova fração 35/6 e simplificar	           35 / 6	                    /             Divisão: 35/6
+     16	             Exibir resultado da divisão	                   35 / 6	-	                  /             Divisão: 35/6
+
+    
+
+    Resultados Finais:
+    Soma: 41/14
+    Subtração: 29/14
+    Multiplicação: 15/14
+    Divisão: 35/6
+
+
