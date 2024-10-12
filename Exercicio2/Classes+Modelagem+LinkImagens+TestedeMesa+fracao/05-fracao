@@ -1,0 +1,142 @@
+package fracao;
+
+
+public class fracao {
+
+    private int numerador;
+
+    private int denominador;
+
+
+
+    public fracao(int numerador, int denominador) {
+
+        if (denominador == 0) {
+
+            throw new IllegalArgumentException("O denominador não pode ser zero.");
+
+        }
+
+        this.numerador = numerador;
+
+        this.denominador = denominador;
+
+        simplificar();
+
+    }
+
+
+    public fracao soma(fracao outra) {
+
+        int novoNumerador = this.numerador * outra.denominador + outra.numerador * this.denominador;
+
+        int novoDenominador = this.denominador * outra.denominador;
+
+        return new fracao(novoNumerador, novoDenominador);
+
+    }
+
+    public fracao subtracao(fracao outra) {
+
+        int novoNumerador = this.numerador * outra.denominador - outra.numerador * this.denominador;
+
+        int novoDenominador = this.denominador * outra.denominador;
+
+        return new fracao(novoNumerador, novoDenominador);
+
+    }
+
+    public fracao multiplicacao(fracao outra) {
+
+        int novoNumerador = this.numerador * outra.numerador;
+
+        int novoDenominador = this.denominador * outra.denominador;
+
+        return new fracao(novoNumerador, novoDenominador);
+
+    }
+
+    public fracao divisao(fracao outra) {
+
+        if (outra.numerador == 0) {
+
+            throw new ArithmeticException("Não é possível dividir por zero.");
+
+        }
+
+        int novoNumerador = this.numerador * outra.denominador;
+
+        int novoDenominador = this.denominador * outra.numerador;
+
+        return new fracao(novoNumerador, novoDenominador);
+
+    }
+
+    private void simplificar() {
+
+        int gcd = gcd(numerador, denominador);
+
+        numerador /= gcd;
+
+        denominador /= gcd;
+
+        if (denominador < 0) {
+
+            numerador = -numerador;
+
+            denominador = -denominador;
+
+        }
+
+    }
+    
+    private int gcd(int a, int b) {
+
+        while (b != 0) {
+
+            int temp = b;
+
+            b = a % b;
+
+            a = temp;
+
+        }
+
+        return a;
+
+    }
+
+    @Override
+
+    public String toString() {
+
+        return numerador + "/" + denominador;
+
+    }
+
+
+    public static void main(String[] args) {
+
+        fracao f1 = new fracao(5, 2);
+
+        fracao f2 = new fracao(3, 7);
+
+        
+
+        System.out.println("Fração 1: " + f1);
+
+        System.out.println("Fração 2: " + f2);
+
+        
+
+        System.out.println("Soma: " + f1.soma(f2));
+
+        System.out.println("Subtração: " + f1.subtracao(f2));
+
+        System.out.println("Multiplicação: " + f1.multiplicacao(f2));
+
+        System.out.println("Divisão: " + f1.divisao(f2));
+
+    }
+
+}
